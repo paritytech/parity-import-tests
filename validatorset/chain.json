@@ -1,0 +1,51 @@
+{
+  "name": "test",
+  "engine": {
+    "authorityRound": {
+      "params": {
+        "gasLimitBoundDivisor": "0x400",
+        "registrar" : "0xfAb104398BBefbd47752E7702D9fE23047E1Bca3",
+        "stepDuration": "4",
+        "blockReward": "0x4563918244F40000",
+        "validators" : {
+          "multi": {
+            "0": { "list": [
+              "0x7ab79cc8b06bb94a50ac92c391ad12125a4c6045"
+            ] },
+	    "10": {
+             "list": [ "0xfdb2b4d60907e3e66a7e363d19c64bfe1173eaf3" ]
+              }
+          }
+        }
+      }
+    }
+  },
+  "params": {
+    "maximumExtraDataSize": "0x20",
+        "gasLimitBoundDivisor": "0x400",
+    "minGasLimit": "0x1388",
+    "networkID" : "0x2B"
+  },
+  "genesis": {
+    "seal": {
+      "authorityRound": {
+        "step": "0x0",
+        "signature": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "difficulty": "0x20000",
+    "gasLimit": "0x5B8D80"
+  },
+  "accounts": {
+    "0x0000000000000000000000000000000000000001": { "balance": "1", "builtin": { "name": "ecrecover", "pricing": { "linear": { "base": 3000, "word": 0 } } } },
+    "0x0000000000000000000000000000000000000002": { "balance": "1", "builtin": { "name": "sha256", "pricing": { "linear": { "base": 60, "word": 12 } } } },
+    "0x0000000000000000000000000000000000000003": { "balance": "1", "builtin": { "name": "ripemd160", "pricing": { "linear": { "base": 600, "word": 120 } } } },
+    "0x0000000000000000000000000000000000000004": { "balance": "1", "builtin": { "name": "identity", "pricing": { "linear": { "base": 15, "word": 3 } } } },
+    
+    "0xfa38c76ffb5a940bcddc7dbc09afc4b2e1166e4f": { "balance": "1606938044258990275541962092341162602522202993782792835301376" },
+    "0x261580fa70de475d26267d8b1daf303047d3712e": { "balance": "1606938044258990275541962092341162602522202993782792835301376" },
+    "0x5547920dbe623cfc7da7ccb26833acb18101e6ff": { "balance": "1606938044258990275541962092341162602522202993782792835301376" },
+    "0x2bcc8c104d090c2890dca2d906169fbfed225832": { "balance": "1606938044258990275541962092341162602522202993782792835301376" }    
+  },
+  "nodes": []
+}
